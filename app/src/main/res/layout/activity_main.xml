@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dev.mrodriguezul.mismapas.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ir_centro_comercial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/img_centro_comercial"
+                android:onClick="irLocal"
+                android:textColor="@color/colorLocal"
+                android:textStyle="bold"
+                android:text="@string/ir_centro_comercial" />
+
+            <Button
+                android:id="@+id/btn_ir_iglesia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/img_iglesia"
+                android:textColor="@color/colorLocal"
+                android:textStyle="bold"
+                android:onClick="irLocal"
+                android:text="@string/ir_iglesia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ir_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/img_hospital"
+                android:textColor="@color/colorLocal"
+                android:textStyle="bold"
+                android:onClick="irLocal"
+                android:text="@string/ir_hospital" />
+
+            <Button
+                android:id="@+id/btn_ir_restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/img_restaurante"
+                android:textColor="@color/colorLocal"
+                android:textStyle="bold"
+                android:onClick="irLocal"
+                android:text="@string/ir_restaurante" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
